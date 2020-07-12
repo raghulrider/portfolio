@@ -1,7 +1,4 @@
 <!doctype html>
-<!--
-Website by Raghul
--->
 
 <html class="no-js" lang="en">
 
@@ -9,34 +6,15 @@ Website by Raghul
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
   <!-- Page Title Here -->
-  <title>Raghul Prasad V (BETA)</title>
+  <title>Raghul's Portfolio (BETA)</title>
 
   <!-- Meta -->
   <!-- Page Description Here -->
-  <meta name="description" content="Hey, There. I'm an ECE engineer and an innovation Engineer">
-    <!-- <iframe src="https://freemusicdownloads.world/songs/sorry/?player=2246"></iframe> -->
+  <meta name="description" content="My Portfolio shows my work and About me.">
 
   <!-- Disable screen scaling-->
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
 
-  <!-- Twitter Meta -->
-  <meta name="twitter:site" content="@raghulprasadv">
-  <meta name="twitter:creator" content="@raghulprasadv">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Page Title">
-  <meta name="twitter:description" content="Description of the page">
-  <meta name="twitter:image" content="../img/bg-default.html">
-
-  <!-- Facebook Meta -->
-  <meta property="og:url" content="your website url here">
-  <meta property="og:title" content="Page Title">
-  <meta property="og:description" content="Description of the page">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="../img/bg-default.html">
-  <meta property="og:image:secure_url" content="../img/bg-default.html">
-  <meta property="og:image:type" content="image/jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
 
   <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
   <!-- Web fonts and Web Icons -->
@@ -58,17 +36,14 @@ Website by Raghul
   <link rel="stylesheet" href="css/main.css">
 
   <!-- add alt layout here -->
-  <link rel="stylesheet" href="css/style-default.css">
+  <!--<link rel="stylesheet" href="./css/style-default.css">-->
 
   <script src="js/vendor/modernizr-2.7.1.min.js"></script>
 </head>
 
 <body id="menu" class="body-page">
-  <!--[if lt IE 8]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
 
-  <!-- Page Loader : just comment these lines to remove it -->
+  <!-- Loading Screen -->
   <div class="page-loader" id="page-loader">
     <div>
       <div class="icon ion-spin"></div>
@@ -82,7 +57,7 @@ Website by Raghul
     <!-- Begin of menu icon toggler -->
     <button class="navbar-toggler site-menu-icon" id="navMenuIcon">
       <!-- Available class : menu-icon-dot / menu-icon-thick /menu-icon-random -->
-      <span class="menu-icon menu-icon-normal">
+      <span class="menu-icon menu-icon-random">
         <span class="bars">
           <span class="bar1"></span>
           <span class="bar2"></span>
@@ -93,36 +68,42 @@ Website by Raghul
     <!-- End of menu icon toggler -->
 
     <!-- Begin of logo/brand -->
-    <a class="navbar-brand" href="index.html">
+    <a class="navbar-brand" href="index.html#">
       <span class="logo">
-        <img class="light-logo" src="img/logo.png" alt="Logo">
+        <img class="light-logo" src="img/myphoto.png" alt="Logo">
       </span>
       <span class="text">
-        <span class="line">Raghul Prasad Venkatachalam</span>
-        <span class="line sub">Portfolio</span>
+        <span class="line">Raghul Prasad</span>
+          <span class="line sub">My Portfolio</span>
       </span>
     </a>
     <!-- End of logo/brand -->
-
-    <!-- begin of menu wrapper -->
+      
+      <!-- begin of menu wrapper -->
     <div class="all-menu-wrapper" id="navbarMenu">
-
+      <!-- Begin of top menu -->
+      <nav class="navbar-topmenu">
+      </nav>
+      <!-- End of top menu -->
       <!-- Begin of hamburger mainmenu menu -->
       <nav class="navbar-mainmenu">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home
+            <a class="nav-link" href="index.html#home">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="item.html">Projects</a>
+            <a class="nav-link" href="index.html#hobbies">Hobbies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#projects">Projects</a>
           </li>
             <li class="nav-item">
-            <a class="nav-link" href="experience.html">Experience</a>
-          </li>
-            <li class="nav-item">
-            <a class="nav-link" href="achievement.html">Achievements</a>
+            <a class="nav-link" href="index.html#contact">Contact</a>
           </li>
         </ul>
       </nav>
@@ -135,14 +116,12 @@ Website by Raghul
   <!-- END OF site header Menu-->
 
   <!-- BEGIN OF page cover -->
-  <div class="page-cover" id="parallax-cover">
+  <div class="hh-cover page-cover">
     <!-- Cover Background -->
-    <div data-depth="0.2" class="cover-bg bg-img" data-image-src="img/bg-default.jpg"></div>
+    <div class="cover-bg bg-img " data-image-src="img/bg-default.jpg"></div>
 
-    <!-- Transluscent mask as filter -->
-    <div class="cover-bg-mask bg-color" data-bgcolor="rgba(2, 3, 10, 0.7)"></div>
-
-
+    <!-- Particles as background - uncomment below to use particles/snow -->
+    <div id="particles-js" class="cover-bg pos-abs full-size bg-color" data-bgcolor="rgba(2, 3, 10, 0.7)"></div>
   </div>
   <!--END OF page cover -->
 
@@ -161,16 +140,18 @@ Website by Raghul
               <!-- title and description -->
               <div class="title-desc">
                 <h1 class="display-4 display-title home-title decor anim-1">Raghul Prasad</h1>
-                <h4 class="anim-2">Hello there, I'm an <strong>ECE engineer</strong> and <strong>Innovation Engineer</strong> from India, I engineer things!</h4>
+                <h4 class="anim-2">Hello, I build things</h4>
+                <p class="anim-2">An <strong>ECE</strong> and an <strong>Innovation</strong> Engineer from INDIA with bigger dreams.
+                  </p>
               </div>
 
               <!-- Action button -->
               <div class="btns-action anim-3">
-                <a class="btn btn-circicon btn-primary" href="#about">
+                <a class="btn btn-circicon btn-primary" href="#hobbies">
                   <span class="icon">
                     <i class="ion ion-chevron-down"></i>
                   </span>
-                  <span class="text">About</span>
+                  <span class="text">Hobbies</span>
                 </a>
               </div>
             </div>
@@ -203,8 +184,8 @@ Website by Raghul
     </div>
     <!-- End of home section -->
 
-    <!-- Begin of description section -->
-    <div class="section section-description fp-auto-height-responsive " data-section="about">
+    <!-- Begin of hobbies section -->
+    <div class="section section-description fp-auto-height-responsive " data-section="hobbies">
       <!-- Begin of section wrapper -->
       <div class="section-wrapper fullwidth with-margin">
 
@@ -214,19 +195,19 @@ Website by Raghul
             <div class="col-12 col-md-6 text-left">
               <!-- title and description -->
               <div class="title-desc">
-                <h1 class="display-4 display-title anim-1">About Me</h1>
-                <h4 class="anim-2">I innovate and build things</h4>
-                <p class="anim-2">This describes what I <strong>do</strong> and what is my <strong>mission</strong>.
+                <h1 class="display-4 display-title anim-1">Hobbies</h1>
+                <h4 class="anim-2">I have some pretty cool hobbies.</h4>
+                <p class="anim-2">There are many things that I do on my leisure but these are the very frequent things I do. An active member of Xda developer(Testing out custom AOSP rom fro android, Helping out people about Android and related stuffs) , Mobile and PC gaming especially COD, watching Youtube tech reviews (I'm an tech enthusiast so I wanna be a part time tech reviewer one day).Physcial hobbies were playing Ball Badminton, Cricket.
+                </p>
               </div>
-                
 
               <!-- Action button -->
               <div class="btns-action anim-3">
-                <a class="btn btn-circicon btn-primary" href="#projects-featured">
+                <a class="btn btn-circicon btn-primary" href="#skills">
                   <span class="icon">
                     <i class="ion ion-chevron-down"></i>
                   </span>
-                  <span class="text">What is my worth</span>
+                  <span class="text">Skills</span>
                 </a>
               </div>
             </div>
@@ -235,7 +216,89 @@ Website by Raghul
         </div>
 
         <!-- aside -->
-        
+        <div class="section-aside aside-bottom anim small-relative">
+          <div class="a-wrapper anim-4">
+            <!-- begin of slider carousel-swiper-alpha -->
+            <div class="slider-wrapper carousel-swiper-alpha carousel-swiper-alpha-demo">
+              <!-- slider -->
+              <div class="slider-container swiper-container">
+                <ul class="item-list swiper-wrapper">
+                  <!-- item -->
+                  <li class="slide-item swiper-slide">
+                    <div class="item-wrapper">
+                      <div class="illustr">
+                        <img src="img/items/xda-logo.jpg" alt="Image" class="img">
+                      </div>
+                      <div class="legend">
+                        <h3 class="title">XDA Developers</h3>
+                        <h4>An Active member and Tester</h4>
+                        <div class="icons">
+                          <a class="icon-btn" href="https://forum.xda-developers.com/member.php?u=8086936">
+                            <i class="icon fa fa-external-link"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- item -->
+                  <li class="slide-item swiper-slide">
+                    <div class="item-wrapper">
+                      <div class="illustr">
+                        <img src="img/items/cod-logo.jpg" alt="Image" class="img">
+                      </div>
+                      <div class="legend">
+                        <h3 class="title">Call Of Duty</h3>
+                        <h4>Casual Player</h4>
+                        <div class="icons">
+                          <a class="icon-btn" href="#profile-link-will-be-updated">
+                            <i class="icon fa fa-gamepad"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- item -->
+                  <li class="slide-item swiper-slide">
+                    <div class="item-wrapper">
+                      <div class="illustr">
+                        <img src="img/items/youtube-logo.jpg" alt="Image" class="img">
+                      </div>
+                      <div class="legend">
+                        <h3 class="title">Youtube</h3>
+                        <h4>Tech Enthusiast</h4>
+                        <div class="icons">
+                          <a class="icon-btn" href="https://www.youtube.com/c/RaghulPrasadVenkatachalam">
+                            <i class="icon fa fa-youtube"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- item -->
+                  <li class="slide-item swiper-slide">
+                    <div class="item-wrapper">
+                      <div class="illustr">
+                        <img src="img/items/bb-cricket-logo.jpg" alt="Image" class="img">
+                      </div>
+                      <div class="legend">
+                        <h3 class="title">Ball Badminton | Cricket</h3>
+                        <h4>Zonal Level Runner</h4>
+                        <div class="icons">
+                          <a class="icon-btn" href="#">
+                            <i class="icon fa fa-trophy"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- pagination -->
+              <div class="items-pagination bar"></div>
+
+            </div>
+            <!-- end of slider carousel-swiper-alpha -->
+
           </div>
         </div>
 
@@ -250,114 +313,118 @@ Website by Raghul
       </div>
       <!-- End of section wrapper -->
     </div>
-    <!-- End of description section -->
+    <!-- End of hobbies section -->
+      
+       <!-- Begin of skills section -->
+    <div class="section section-list-feature fp-auto-height-responsive " data-section="skills">
+      <!-- section cover -->
+      <div class="section-cover-full bg-img" data-image-src="./img/sections/services.png">
+      </div>
 
-    <!-- Begin of slider section -->
-    <div class="section section-twoside project-slider fp-auto-height-responsive " data-section="projects-featured">
-        
-        <div class="slide">
-            <div class="slide-wrapper">
-                <div class="item-wrapper">
-            <div class="illustr">
-              <img class="img img-block" src="img/items/img-sample1.jpg" alt="Image">
-            </div>
-            <div class="legend">
-              <a href="pcb.html#project_url">
-                <h3>PCB Design</h3>
-                <h4>Design / Engineer</h4>
-                <p>A printed circuit board (PCB) mechanically supports and electrically connects electronic components or electrical components using conductive tracks, pads and other features etched from one or more sheet layers of copper laminated onto and/or between sheet layers of a non-conductive substrate.</p>
-              </a>
-
-              <a class="btn btn-transp-arrow btn-primary" href="pcb.html">
-                <span class="text">For more Details</span>
-                <span class="icon arrow-right"></span>
-              </a>
-              <div class="icons">
-                <a class="icon-btn" href="https://www.instagram.com/_raghul_dicaprio_/">
-                  <i class="icon fa fa-instagram"></i>
-                </a>
-                <a class="icon-btn" href="https://twitter.com/raghulprasadv">
-                  <i class="icon fa fa-twitter"></i>
-                </a>
+      <!-- Begin of section wrapper -->
+      <div class="section-wrapper fullwidth with-margin">
+        <!-- content -->
+        <div class="section-content anim">
+          <div class="row">
+            <div class="col-12 col-lg-6 text-left">
+              <!-- title and description -->
+              <div class="title-desc">
+                <h2 class="display-4 display-title anim-1">Skills</h2>
+                <p class="anim-2">These are the list of skills I have (Including the skills I'm learning now)
+                </p>
               </div>
             </div>
           </div>
-        </div>
-        </div>
-        
-        <div class="slide">
-        <div class="slide-wrapper">
-          <div class="item-wrapper">
-            <div class="illustr">
-              <img class="img img-block" src="img/items/embedded.jpg" alt="Image">
-            </div>
-            <div class="legend">
-              <a href="embedded.html">
-                <h3>Embedded Systems</h3>
-                <h4>System Design</h4>
-                <p>An embedded system is a combination of computer hardware and software, either fixed in capability or programmable, designed for a specific function or functions within a larger system.Embedded systems are computing systems, but they can range from having no user interface (UI) -- for example, on devices in which the system is designed to perform a single task -- to complex graphical user interfaces (GUIs), such as in mobile devices. User interfaces can include buttons, LEDs, touchscreen sensing and more. Some systems use remote user interfaces as well.</p>
-              </a>
-              <a class="btn btn-transp-arrow btn-primary" href="embedded.html#project_url">
 
-              <a class="btn btn-transp-arrow btn-primary" href="pcb.html#project_url">
+          <!-- service list -->
+          <div class="service-list grid-1 grid-md-2 grid-lg-4 anim-list decor">
+              <!--an item-->
+            <div class="item media">
+              <div class="img">
+                <i class="icon ion-code-working"></i>
+              </div>
+              <div class="media-body">
+                <h4>Coding</h4>
+                <p>I'm good with Python3 and had did some small projects 
+                    using it.</p>
 
-                <span class="text">For more Details</span>
-                <span class="icon arrow-right"></span>
-              </a>
-              <div class="icons">
-                <a class="icon-btn" href="https://www.instagram.com/_raghul_prasad_/">
-                  <i class="icon fa fa-instagram"></i>
-                </a>
-                <a class="icon-btn" href="https://twitter.com/raghulprasadv">
-                  <i class="icon fa fa-twitter"></i>
+                <a class="btn btn-transp-arrow btn-primary" href="http://github.com/raghulrider/boredom_python">
+                  <span class="text">Details</span>
+                  <span class="icon arrow-right"></span>
                 </a>
               </div>
             </div>
-          </div>
-        </div>
-        </div>
-        
-      <div class="slide">
-        <div class="slide-wrapper">
-          <div class="item-wrapper">
-            <div class="illustr">
-              <img class="img img-block" src="img/items/machine_learning.jpg" alt="Image">
-            </div>
-            <div class="legend">
-              <a href="ml.html#project_url">
-                <h3>Machine Learning</h3>
-                <h4>Data Analysis</h4>
-                <p>Machine learning is an application of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. Machine learning focuses on the development of computer programs that can access data and use it learn for themselves.The process of learning begins with observations or data, such as examples, direct experience, or instruction, in order to look for patterns in data and make better decisions in the future based on the examples that we provide. The primary aim is to allow the computers learn automatically without human intervention or assistance and adjust actions accordingly.</p>
-              </a>
+            <!-- an item -->
+            <div class="item media">
+              <div class="img">
+                <ion-icon name="logo-android" style="font-size:56px">></ion-icon>
+              </div>
+              <div class="media-body">
+                <h4>Android App development</h4>
+                <p>Developed Couple Android Apps hence have skills in 
+                    JAVA,XML,TS</p>
 
-              <a class="btn btn-transp-arrow btn-primary" href="ml.html">
-    <a class="btn btn-transp-arrow btn-primary" href="ml.html#project_url">
-                <span class="text">For more Details</span>
-                <span class="icon arrow-right"></span>
-              </a>
-              <div class="icons">
-                <a class="icon-btn" href="https://www.instagram.com/_raghul_prasad_/">
-                  <i class="icon fa fa-instagram"></i>
-                </a>
-                <a class="icon-btn" href="https://twitter.com/raghulprasadv">
-                  <i class="icon fa fa-twitter"></i>
+
+                <a class="btn btn-transp-arrow btn-primary" href="http://github.com/raghulrider/Android-Studio">
+                  <span class="text">Details</span>
+                  <span class="icon arrow-right"></span>
                 </a>
               </div>
             </div>
+            <!-- an item -->
+            <div class="item media">
+              <div class="img">
+                <ion-icon name="analytics-outline" style="font-size:56px"></ion-icon>
+              </div>
+              <div class="media-body">
+                <h4>Machine Learning</h4>
+                <p>Intermediate in applying ML and did some 
+                    cool projects.</p>
+
+                <a class="btn btn-transp-arrow btn-primary" href="https://github.com/raghulrider/boredom_python/tree/master/Day-1%20Durai%20Workshop%20">
+                  <span class="text">Details</span>
+                  <span class="icon arrow-right"></span>
+                </a>
+              </div>
+            </div>
+            <!-- an item -->
+            <div class="item media">
+              <div class="img">
+                <ion-icon name="hardware-chip-outline" style="font-size:56px"></ion-icon>
+              </div>
+              <div class="media-body">
+                <h4>Embedded Systems and IOT</h4>
+                <p>I have major in ECE and did some cool projects 
+                    namely "Insulin Pump".</p>
+
+                <a class="btn btn-transp-arrow btn-primary" href="#">
+                  <span class="text">Details</span>
+                  <span class="icon arrow-right"></span>
+                </a>
+              </div>
+            </div>
+    
           </div>
-        </div>
+
         </div>
 
-      <!-- Arrows scroll down/up -->
-      <footer class="section-footer scrolldown">
-        <a class="down">
-          <span class="icon"></span>
-          <span class="txt">All Works</span>
-        </a>
-      </footer>
 
+
+
+        <!-- Arrows scroll down/up -->
+        <footer class="section-footer scrolldown">
+          <a class="down">
+            <span class="icon"></span>
+            <span class="txt">Projects</span>
+          </a>
+        </footer>
+      </div>
+      <!-- End of section wrapper -->
     </div>
-    <!-- End of slider section -->
+    <!-- End of skills section -->
+
+
+
 
     <!-- Begin of list projects section -->
     <div class="section section-list-feature fp-auto-height-responsive " data-section="projects">
@@ -370,72 +437,90 @@ Website by Raghul
             <div class="col-12 col-lg-6 text-left">
               <!-- title and description -->
               <div class="title-desc">
-                <h2 class="display-4 display-title anim-1">Skills</h2>
-                <p class="anim-2">I have skills in embedded system, embedded C, IOT and PCB designing as I'm coming from ECE field.On the other side as the world evolves AI evaolves with it, so I'm learning Machine Learning as it is a part of AI.  
-                </p>
-                <h3 class="display-4 display-title anim-1">Hobbies</h3>
-                <p class="anim-2">I love android and new electronics. Most of the time I spend my time in XDA developers, where I download custom ROMs and test it by flashing in my mobile, and another thing that eats my time is youtube and Hacker News.   
+                <h2 class="display-4 display-title anim-1">Projects</h2>
+                <p class="anim-2">List of my projects.
                 </p>
               </div>
             </div>
           </div>
 
-         <!-- Begin of register/login/signin section -->
-    <div class="section section-register fp-auto-height-responsive " data-section="register">
-      <!-- section cover -->
-      <div class="section-cover-full bg-img" data-image-src="./img/sections/register.png">
-      </div>
-
-      <!-- Begin of section wrapper -->
-      <div class="section-wrapper fullwidth with-margin">
-
-        <!-- content -->
-        <div class="section-content anim">
-
-          <div class="row">
-
-            <div class="col-12 col-md-12 col-lg-5">
+          <!-- project list -->
+          <div class="project-list grid-1 grid-md-2 grid-lg-3 anim-list">
+            <!-- an item -->
+            <div class="item media media-project">
+              <div class="media-img">
+                <img class="" src="img/items/insulin-pump.jpg" alt="An image">
+              </div>
+              <div class="media-body">
+                <a href="http://protosem.tech/innovations/insulinpump/index.html">
+                  <h4>Insulin Pump</h4>
+                  <h3>An Assistive Device for Diabetic Management</h3>
+                </a>
+              </div>
+              <div class="media-footer">
+                <a class="btn btn-transp-arrow btn-primary" href="http://protosem.tech/innovations/insulinpump/index.html">
+                  <span class="text">More details</span>
+                  <span class="icon arrow-right"></span>
+                </a>
+              </div>
             </div>
-          </div>
-        </div>
-        <!-- end of content -->
+            <!-- an item -->
+            <div class="item media media-project">
+              <div class="media-img">
+                <img class="" src="img/items/mizu-apprentice.jpg" alt="An image">
+              </div>
+              <div class="media-body">
+                <a href="https://github.com/raghulrider/Mizu-Apprentice">
+                  <h4>Mizu Apprentice</h4>
+                  <h3>Water usage prediction and RealTime 
+                      water level indicator</h3>
+                </a>
+              </div>
+              <div class="media-footer">
+                <a class="btn btn-transp-arrow btn-primary" href="https://github.com/raghulrider/Mizu-Apprentice">
+                  <span class="text">More details</span>
+                  <span class="icon arrow-right"></span>
+                </a>
+              </div>
+            </div>
+            <!-- an item -->
+            <div class="item media media-project">
+              <div class="media-img">
+                <img class="" src="img/items/nodemcu.png" alt="An image">
+              </div>
+              <div class="media-body">
+                <a href="https://github.com/raghulrider/NodeMCU-Home-Automation">
+                  <h4>NodeMCU Home Automation</h4>
+                  <h3>Local Webserver to control home appliances 
+                      using ESP8266</h3>
+                </a>
+              </div>
+              <div class="media-footer">
+                <a class="btn btn-transp-arrow btn-primary" href="https://github.com/raghulrider/NodeMCU-Home-Automation">
+                  <span class="text">More details</span>
+                  <span class="icon arrow-right"></span>
+                </a>
+              </div>
+            </div>
 
-        <!-- aside footer -->
-        <div class="section-aside aside-bottom small-relative">
-          <div class="text-left text-md-right">
-            <p>My Social Media Link. You can follow me there to know what I'm doing</p>
           </div>
-          <div class="icons icons-margin">
-            <a class="icon-btn" href="https://www.instagram.com/_raghul_prasad_/">
-              <i class="icon fa fa-instagram"></i>
-            </a>
-            <a class="icon-btn" href="https://www.youtube.com/c/RaghulPrasadVenkatachalam">
-              <i class="icon fa fa-youtube"></i>
-            </a>
-            <a class="icon-btn" href="https://www.facebook.com/raghul.prasad.35">
-              <i class="icon fa fa-facebook"></i>
-            </a>
-            <a class="icon-btn" href="https://in.pinterest.com/raghulprasadv/">
-              <i class="icon fa fa-pinterest"></i>
-            </a>
-            <a class="icon-btn" href="https://twitter.com/raghulprasadv">
-              <i class="icon fa fa-twitter"></i>
-            </a>
-          </div>
+
         </div>
 
+
+
+
+        <!-- Arrows scroll down/up -->
+        <footer class="section-footer scrolldown">
+          <a class="down">
+            <span class="icon"></span>
+            <span class="txt">Services</span>
+          </a>
+        </footer>
       </div>
       <!-- End of section wrapper -->
-
-      <!-- Arrows scroll down/up -->
-      <footer class="section-footer scrolldown">
-        <a class="down">
-          <span class="icon"></span>
-          <span class="txt">Contact</span>
-        </a>
-      </footer>
     </div>
-    <!-- End of register/login/signin section -->
+    <!-- End of list projects section -->
 
     <!-- Begin of contact section -->
     <div class="section section-contact fp-auto-height-responsive no-slide-arrows " data-section="contact">
@@ -454,31 +539,44 @@ Website by Raghul
               <div class="title-desc">
                 <div class="anim-2">
                   <h2 class="display-4 display-title">Contact</h2>
-                  <p>To hire me.</p>
+                  <p>If you wanna hire me use any of these 
+                      below mentioned ways and if you don't wanna hire, 
+                      you can still use those so that we can have a 
+                      little funny chat!</p>
                 </div>
                 <div class="address-container anim-3">
 
                   <div class="row">
                     <div class="col-12 col-md-6 col-lg-6">
                       <h4>Contact</h4>
-                      <p>Call: 8489789367</p>
+                      <p>Call: +91 8489789367</p>
                       <p>Email: raghulprasadv@gmail.com</p>
 
                       <div class="icons icons-margin">
-                        <a class="icon-btn" href="https://www.instagram.com/_raghul_prasad_/">
+                        <a class="icon-btn" href="http://instagram.com/_raghul_prasad_">
                           <i class="icon fa fa-instagram"></i>
                         </a>
-                        <a class="icon-btn" href="https://twitter.com/raghulprasadv">
+                        <a class="icon-btn" href="http://twitter.com/raghulprasadv">
                           <i class="icon fa fa-twitter"></i>
+                        </a>
+                          <a class="icon-btn" href="http://www.linkedin.com/in/raghul-prasad-v/">
+                          <i class="icon fa fa-linkedin"></i>
+                        </a>
+                          <a class="icon-btn" href="http://youtube.com/c/RaghulPrasadVenkatachalam">
+                          <i class="icon fa fa-youtube"></i>
+                        </a>
+                        <a class="icon-btn" href="http://github.com/raghulrider">
+                          <i class="icon fa fa-github"></i>
+                        </a>
+                        <a class="icon-btn" href="http://facebook.com/raghul.prasad.35">
+                          <i class="icon fa fa-facebook"></i>
                         </a>
                       </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-6">
                       <h4>Address</h4>
-                      <p>
-                        My address
-                        <br>3/426B, Kattukottaigal
-                        <br>Deviyakurichi,Attur,Salem
+                      <p>3/426B, Kattukottaigal
+                        <br>Deviyakurichi, Attur, Salem.
                       </p>
                     </div>
                   </div>
@@ -493,6 +591,8 @@ Website by Raghul
           </div>
         </div>
 
+
+    
       </div>
       <!-- End of slide section wrapper -->
 
@@ -506,25 +606,25 @@ Website by Raghul
 
     <!-- Right content -->
     <div class="footer-right">
-      <p class="note">LinkedIn
-        <a href="https://www.linkedin.com/in/raghul-prasad-v/">
-          <span class="marked">Raghul Prasad</span>
-        </a>
-      </p>
       <ul class="social">
         <li>
-          <a href="https://www.facebook.com/raghul.prasad.35">
+          <a href="http://facebook.com/raghul.prasad.35">
             <i class="icon fa fa-facebook"></i>
           </a>
         </li>
         <li>
-          <a href="https://twitter.com/thalaraghul111">
+          <a href="http://twitter.com/raghulprasadv">
             <i class="icon fa fa-twitter"></i>
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/_raghul_prasad_/">
+          <a href="http://instagram.com/_raghul_prasad_">
             <i class="icon fa fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="http://www.linkedin.com/in/raghul-prasad-v/">
+            <i class="icon fa fa-linkedin"></i>
           </a>
         </li>
       </ul>
@@ -551,9 +651,9 @@ Website by Raghul
 
   <!-- Javascript main files -->
   <script src="js/main.js"></script>
-        
 
-
+  <script src="js/particlejs/particles-init.js"></script>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 </body>
 
 </html>

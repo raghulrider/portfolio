@@ -2592,7 +2592,7 @@ textarea {
       .page-header-alpha .navbar-brand {
         position: fixed;
         left: 120px;
-        top: 32px;
+        top: -10px;
         z-index: 20; } }
     .page-header-alpha .navbar-brand .logo img {
       height: 40px;
