@@ -17,7 +17,7 @@ html file
     height: 100%;
     top:0;
     left:0;
-    background: #fff;
+    background: #000;
     display: block;  
     
 }
@@ -53,20 +53,20 @@ html file
 			width: 40px;
 			height: 40px;
 			content: "";
-			background: #1d1d1d;
+			background: #808080;
 			border-radius: 100px;
-			border: 8px solid #fff;
+			border: 8px solid #000;
 			border-top-color: rgba(255, 255, 255, 0.58);
 			border-bottom-color: rgba(255, 255, 255, 0.58);
 		}
         .page-loader div p{
             margin-top: 100px;
             font-size: 14px;
-            color: #555;
+            color: #fff;
             letter-spacing: 1em;
             padding-left: 1em;
             text-transform: uppercase;
-/*			font-family: 'Montserrat';*/
+            font-family: 'Montserrat';
 			font-family: 'Roboto', 'Helvetica', sans-serif;
 			font-weight: bold;
         }
